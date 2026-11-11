@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Uk Housing Affordability Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="generic.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li>
+								<a href="https://www.linkedin.com/in/luke-allison-1a4578246/"
+								class="icon brands fa-linkedin"
+								target="_blank" rel="noopener noreferrer">
+									<span class="label">LinkedIn</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="https://github.com/LA-Keisg"
+								class="icon brands fa-github"
+								target="_blank" rel="noopener noreferrer">
+									<span class="label">GitHub</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+
+								<header class="major">
+									<h1>UK Housing Affordability Analysis</h1>
+									<p>Python | Plotly | PostgreSQL | Streamlit</p>
+								</header>
+
+								<h2>Project Overview</h2>
+								<p>
+									This project was developed as part of my final-year
+									Computer Science dissertation, titled
+									<em>The North-South Divide: A Data-Driven Analysis
+									of the Cost-of-Living Crisis in England</em>.
+								</p>
+								<p>
+									The project investigated housing affordability and
+									wider cost-of-living trends across England between
+									2019 and 2023, focusing on regional differences,
+									the North-South divide and changes during the
+									COVID-19 period.
+								</p>
+								<p>
+									Using Python, PostgreSQL and Streamlit, I developed
+									a multi-page analytical web application that brings
+									together economic datasets and presents them through
+									interactive visualisations, regional comparisons
+									and a personalised affordability tool.
+								</p>
+								<h3>Project Availability</h3>
+								<p>
+									Due to sensitive personal information being included in 
+									the source code of this project, a GitHub repository is 
+									not publicly available. Screenshots have been used to display 
+									some of the more significant pages from the app. These images 
+									were extracted from the original documentation and do not scale 
+									well to higher resolutions. Apologies for this!
+								</p>
+
+								<!-- Screenshot 1: Application Home Page -->
+									<p style="text-align: center;">
+									<em>
+										<h4>Home Page</h4>
+										The home page, displaying the login and signup form, as well as the
+									navigation to all of the different pages.
+									</em>
+								</p>
+								<div class="image main">
+									<img src="images/homePage.jpg"
+										alt="Housing affordability application home page" />
+								</div>
+
+								<h2>Data &amp; Technologies</h2>
+								<p>
+									The project included collecting, cleaning and integrating datasets covering earnings, 
+									house prices, rental costs, inflation and utility expenses, all at local authority 
+									level. This data was collected from the Office for National Statistics (ONS) and imported 
+									into a PostgreSQL relational database, where it was organised into a table organised by 
+									date, local authority and broader region.
+								</p>
+								<p>
+									Python was used for data processing and analysis, Plotly was used to develop the interactive 
+									visualisations, whilst Streamlit was used to create the web application in which they were 
+									displayed. Visualisations primarily included time-series charts, distribution plots, scatter 
+									plots and choropleth maps. Most visualisations were customisable using widgets, allowing users 
+									to personalise the metric displayed.
+								</p>
+								<p>
+									The OpenAI API was used to generate insights for users. This feature was added so that users 
+									with less experience in data analysis could receive personalised insights when customising the 
+									metrics displayed in the visualisations.
+								</p>
+
+								<h2>Interactive Affordability Tool</h2>
+								<p>
+									A key feature of the application was an interactive
+									tool allowing users to assess housing affordability
+									across local authorities based on their own budgets.
+								</p>
+								<p>
+									Users could select whether they intended to rent or
+									buy, and enter monthly budgets for housing and household bills.
+									The combined budget was used to assess affordability
+									across different areas. If users selected to buy, they could
+									specify which type of property they wanted to buy, but equivalent data was not
+									accessible for rental properties.
+								</p>
+								<p>
+									Results were displayed on an interactive map,
+									categorising local authorities as affordable,
+									stretched or unaffordable. Users could also select
+									a specific local authority to highlight it and view
+									additional affordability statistics and a calculated
+									affordability score.
+								</p>
+								
+
+								<!-- Screenshot 2: Affordability Tool -->
+								 <p style="text-align: center;">
+									<em>
+										<h4>Affordability Tool</h4>
+										The affordability tool, displaying customisable metrics and a map showing which 
+									local authorities were affordable based on the selected budgets. The blank areas 
+									represent local authorities with inconsistent or missing data that could not be 
+									included in the dataset.
+									</em>
+								</p>
+								<div class="image main">
+									<img src="images/affordabilityTool.jpg"
+										alt="Interactive housing affordability tool" />
+								</div>
+
+								<h2>Analysis &amp; Visualisation</h2>
+								<p>
+									The application included several analytical pages
+									exploring regional affordability differences,
+									historical trends and relationships between economic
+									variables. These allowed users to investigate
+									changes between 2019 and 2023, including the
+									differences between housing costs and earnings.
+								</p>
+								<p>
+									A regional dashboard provided interactive
+									visualisations for selected areas, while optional
+									AI-generated insights helped users interpret
+									patterns and identify notable observations
+									within the data.
+								</p>
+
+								<!-- Screenshot 3: Regional Dashboard -->
+
+								 <p style="text-align: center;">
+									<em>
+										 <h4>Regional Dashboard</h4>
+										The regional dashboard displaying key information for
+										each broader region. Although not shown in the image,
+										users could select between the North, Midlands and South.
+									</em>
+								</p>
+								<div class="image main">
+									<img src="images/dashboard.jpg"
+										alt="Regional cost-of-living analysis dashboard" />
+								</div>
+
+								<h2>Key Findings</h2>
+								<p> 
+									It would be impossible to talk about all of the findings
+									as this project took up around 3 months of my life!
+									</p>
+									<p> 
+									These are the most notable findings:
+									</p>
+								<p>
+									The analysis identified a consistent North–South divide in housing affordability, 
+									with the South experiencing significantly higher housing costs relative to earnings. 
+									London boroughs showed particularly high affordability pressures and considerable 
+									variation between local authorities. However, the gap has not increased or decreased 
+									significantly over the period analysed, with both regions experiencing a decline 
+									in affordability at a similar rate.
+								</p>
+								<p>
+									Kensington and Chelsea had the worst housing affordability, with average house prices 
+									reaching approximately 40 times average annual earnings in 2023.
+								</p>
+								<p>
+									Average earnings in the North and Midlands are very similar, but the North generally 
+									shows significantly better housing affordability due to lower housing costs.
+								</p>
+
+								<h2>Project Outcomes &amp; Limitations</h2>
+								<p>
+									I wanted the completed application to not only be a place for me to display my own findings, 
+									but also a platform where users could explore the data themselves. 
+									I believe I accomplished this through highly personalised visualisations and user-friendly insights.
+								</p>
+								<p>
+									The main limitation of the project was the inconsistency of the data, with missing values resulting 
+									in several local authorities being excluded from the analysis. This could have affected the accuracy 
+									of some findings. There were also certain metrics I could not include, either because the ONS did not 
+									collect the relevant data or because too many local authorities had missing values, which would have 
+									significantly affected the analysis.
+
+								</p>
+								<p>
+									This was by far the largest project I had ever completed, involving over 4000 lines of python code, and it was an extremely valuable learning experience. 
+									As stressful as it was, looking back on it makes me extremely proud, and it was one of the main reasons 
+									I was able to achieve a First-Class Honours degree!
+								</p>
+
+							</section>
+
+
+
+							
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<section>
+								<h3>Get in Touch</h3>
+								<p>
+									Feel free to contact me regarding employment
+									opportunities or questions about my projects using the email address provided.
+								</p>
+								<p>
+
+								</p>
+							</section>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Gidea Park, Greater London</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p>+44 7496 555572</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p>lukeallison.b@gmail.com</p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li>
+										<a href="https://www.linkedin.com/in/luke-allison-1a4578246/"
+										class="icon brands alt fa-linkedin"
+										target="_blank" rel="noopener noreferrer">
+											<span class="label">LinkedIn</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="https://github.com/LA-Keisg"
+										class="icon brands alt fa-github"
+										target="_blank" rel="noopener noreferrer">
+											<span class="label">GitHub</span>
+										</a>
+									</li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
