@@ -4687,3 +4687,32 @@ input, select, textarea {
 		}
 
 	}
+
+
+/* Align project buttons at the bottom of each article */
+.posts article {
+    display: flex;
+    flex-direction: column;
+}
+
+.posts article .actions {
+    margin-top: auto;
+}
+
+
+/* Keep project articles vertically structured */
+.posts article {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Give all project headers the same height */
+.posts article header {
+    height: 160px;
+    flex-shrink: 0;
+}
+
+/* Align project buttons at the bottom */
+.posts article .actions {
+    margin-top: auto;
+}
