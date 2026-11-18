@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>E-commerce Web Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="generic.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li>
+								<a href="https://www.linkedin.com/in/luke-allison-1a4578246/"
+								class="icon brands fa-linkedin"
+								target="_blank" rel="noopener noreferrer">
+									<span class="label">LinkedIn</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="https://github.com/LA-Keisg"
+								class="icon brands fa-github"
+								target="_blank" rel="noopener noreferrer">
+									<span class="label">GitHub</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							
+							<section class="post">
+
+								<header class="major">
+									<h1>2025 E-commerce Performance Analysis</h1>
+									<p>SQL | Google BigQuery | Power BI</p>
+								</header>
+
+								<h2>Project Overview</h2>
+								<p>
+									This project explores performance metrics for a fictional UK homeware retailer. The report follows web activity, product performance,
+									and a full e-commerce overview of how the platform is performing. For this I prepared the data, modelling it into a relational database
+									and built a three-page Power BI report.
+								</p>
+
+								<h2>Tools & Data Sources</h2>
+								
+
+								<ul>
+									<li><strong>SQL:</strong> Relational database modelling.</li>
+									<li><strong>Google BigQuery:</strong> Data storage.</li>
+									<li><strong>Power BI:</strong> Interactive dashboard development.</li>
+								</ul>
+								<p>
+									The synthetic dataset covers January to December 2025 and includes 165,000 sessions, 5,000 completed orders across 110 different products. 
+								</p>
+
+								<h2>Data Cleaning &amp; Preparation</h2>
+								<p>
+									The database was already prepared for analysis, however I did checks for all foreign-key relationships and found zerp unmatched IDs. In 
+								Power BI, I set up the filter path from sessions to orders so that filters such as traffic source and device could also update sales measures.
+								I created a new table in Power BI to list the funnel stages in the order a user goes through them This was so I could show how many
+								users reached each stage and what percentage moved onto the next. 
+								</p>
+
+								<h2>Analysis &amp; Visualisation</h2>
+
+								<h3>E-commerce Overivew</h3>
+								<p>
+									Summarises net revenue orders, sessions, purchase coversion and average order value. Displays visualisations covering different customer types,
+									promotion types, different device types and a time series showing monthly net revenue. 
+								</p>
+
+								<div style="text-align: center;">
+									<img src="images/e-commercePage1.jpg"
+										alt="E-commerce Dashboard"
+										style="max-width: 1000px; width: 100%; max-height: 1000px;" />
+								</div>
+
+								<h3>Website Conversion Funnel</h3>
+								<p>
+									Tracks how many visits reach product view, cart, checkout and purchase. 
+									The date slider and breakdowns by device and traffic source make it possible
+									to compare where visits drop off. 
+								</p>
+
+								<div style="text-align: center;">
+									<img src="images/e-commercePage2.jpg"
+										alt="E-commerce Dashboard"
+										style="max-width: 1000px; width: 100%; max-height: 1000px;" />
+								</div>
+
+								<h3>Product Performance</h3>
+								<p>
+									Compares revenue and gross profit across product categories. A scatter
+									chart plots product price against units sold, showing the most and least
+									successfull products. The category slider allows users to compare several categories at will, 
+									and table shows the products with zero units sold. 
+								</p>
+
+								<div style="text-align: center;">
+									<img src="images/e-commercePage3.jpg"
+										alt="E-commerce Dashboard"
+										style="max-width: 1000px; width: 100%; max-height: 1000px;" />
+								</div>
+
+								<h2>Key Findings</h2>
+								<ul>
+									<li>5,000 of 165,000 sessions ended in a purchase, giving a purchase conversion rate of 3.03%.</li>
+									<li>The biggest drop-off came after shoppers viewed a product. Only 26.45% of sessions that reached this stage went on to add a product to the cart.</li>
+									<li>The store generated £316,075.03 in net merchandise revenue.</li>
+									<li>Email ranked fifth for total sessions but generated the most net revenue of any traffic source. It had a purchase conversion rate of 9.23%.</li>
+									<li>Desktop had the highest purchase conversion rate of any device at 4.09%.</li>
+								</ul>
+
+
+								<ul class="actions special">
+									<li>
+										<a href="https://github.com/LA-Keisg/E-commerce_Web_Analytics_Relational_Schema/releases/download/v1.0/ecommerce_web_analytics.pbix"
+										class="button primary"
+										target="_blank"
+										rel="noopener noreferrer">
+											Download Dashboard
+										</a>
+									</li>
+									<li>
+										<a href="https://github.com/LA-Keisg/E-commerce_Web_Analytics_Relational_Schema"
+										class="button"
+										target="_blank"
+										rel="noopener noreferrer">
+											View GitHub Repository
+										</a>
+									</li>
+								</ul>
+
+							</section>
+
+
+							
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<section>
+								<h3>Get in Touch</h3>
+								<p>
+									Feel free to contact me regarding employment
+									opportunities or questions about my projects using the email address provided.
+								</p>
+								<p>
+
+								</p>
+							</section>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Gidea Park, Greater London</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p>+44 7496 555572</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p>lukeallison.b@gmail.com</p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li>
+										<a href="https://www.linkedin.com/in/luke-allison-1a4578246/"
+										class="icon brands alt fa-linkedin"
+										target="_blank" rel="noopener noreferrer">
+											<span class="label">LinkedIn</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="https://github.com/LA-Keisg"
+										class="icon brands alt fa-github"
+										target="_blank" rel="noopener noreferrer">
+											<span class="label">GitHub</span>
+										</a>
+									</li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
